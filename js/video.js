@@ -54,3 +54,7 @@ document.querySelector("#orig").addEventListener("click", function() {
 	console.log("Back to normal");
 	video.classList.remove("oldSchool");
 });
+
+document.querySelector("#mute").addEventListener("click", function() {
+
+});
