@@ -36,3 +36,21 @@ document.querySelector("#skip").addEventListener("click", function() {
 	}
 	console.log("New Location " + video.currentTime);
 });
+
+document.querySelector("#slider").addEventListener("change", function() {
+	console.log(this.value)
+	var slider = this.value;
+	video.volume = slider/100;
+	document.querySelector('#volume').innerHTML=video.volume * 100 + "%"
+
+});
+
+document.querySelector("#vintage").addEventListener("click", function() {
+	console.log("Vintage");
+	video.classList.add("oldSchool");
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+	console.log("Back to normal");
+	video.classList.remove("oldSchool");
+});
