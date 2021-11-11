@@ -16,12 +16,12 @@ document.querySelector("#pause").addEventListener("click", function() {
 	video.pause()
 });
 
-document.querySelector("#slower").addEventListener("click", function() {
+document.querySelector("#slowdown").addEventListener("click", function() {
 	video.playbackRate*=0.95;
 	console.log("New speed is " + video.playbackRate)
 });
 
-document.querySelector("#faster").addEventListener("click", function() {
+document.querySelector("#speedup").addEventListener("click", function() {
 	video.playbackRate/=0.95;
 	console.log("New speed is " + video.playbackRate)
 });
