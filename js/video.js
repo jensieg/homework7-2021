@@ -58,8 +58,10 @@ document.querySelector("#orig").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted === false) {    
 		video.muted = true;
+		document.querySelector('#mute').innerHTML="unmute"
  	}
 	else{
-		video.muted==true;
+		video.muted==false;
+		document.querySelector('#mute').innerHTML="mute"
 	}
 });
